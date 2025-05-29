@@ -1,0 +1,139 @@
+.hero {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Productos */
+.products {
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px 20px;
+    max-width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.products h2 {
+    color: #406e0b;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    margin: 15px;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.product-item h3 {
+    color: #406e0b;
+    margin: 10px 0;
+}
+
+.product-item .price {
+    color: #406e0b;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #FFD700;
+    color: #406e0b; 
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #e6c200;
+}
+
+/* Contacto */
+.contact-section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px 20px;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    color: #406e0b;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #406e0b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #406e0b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 1 1 100%;
+    }
+}
